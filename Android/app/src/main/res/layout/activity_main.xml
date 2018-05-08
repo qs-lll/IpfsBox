@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Button
+        android:text="节点启动"
+        android:visibility="gone"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="节点关闭"
+        android:visibility="gone"
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_left"
+            android:text="扫一扫" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/btn_scan"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            android:layout_toLeftOf="@+id/btn_play"
+            android:layout_toRightOf="@+id/btn_scan"
+            android:background="@drawable/search"
+            android:gravity="center"
+            android:hint="IPFS HASH"
+            android:minWidth="150dp"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_right"
+            android:text="GO" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="IPFS 视频在线播放器可以在线播放存储在 IPFS 网络的视频文件，只需要填写文件的 IPFS hash 值即可。
+
+你可以在这里上传视频文件( 256M 以内），或者通过 IPFS 客户端上传视频到 IPFS 网络。" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/dash_round"
+        android:gravity="center"
+        android:layerType="software"
+        android:text="点此上传\n\n视频/图片" />
+    <TextView
+        android:id="@+id/icon_group"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:drawableTop="@drawable/t_logo"
+        android:text="Telegram讨论"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
