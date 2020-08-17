@@ -1,8 +1,8 @@
 package droidninja.filepicker.utils;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 
 import droidninja.filepicker.R;
 import droidninja.filepicker.fragments.BaseFragment;

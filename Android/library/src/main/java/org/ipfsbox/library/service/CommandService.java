@@ -38,7 +38,7 @@ public interface CommandService {
     }
 
     interface stats {
-        @GET("stats/bw")
+        @POST("stats/bw")
         Call<Stats_bw> bw();
     }
 

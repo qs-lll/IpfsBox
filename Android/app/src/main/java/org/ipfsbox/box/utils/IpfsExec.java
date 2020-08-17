@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import static butterknife.internal.Utils.arrayOf;
 
 /**
  * IpfsExec 操作方法
@@ -162,7 +161,7 @@ public class IpfsExec {
 //        ProgressDialog progressDialog = new ProgressDialog(context);
 //        progressDialog.show();
 
-        String[] envp = arrayOf("IPFS_PATH=" + Constants.Dir.getSDdir(context) + "/.ipfsNode");
+        String[] envp = {("IPFS_PATH=" + Constants.Dir.getSDdir(context) + "/.ipfsNode")};
         String command = Constants.Dir.getLocalDir(context) + "/ipfsNode " + cmd;
         Process exec = Runtime.getRuntime().exec(command, envp);
 //        BufferedReader inputStreamReader = new BufferedReader(new InputStreamReader(exec.getInputStream()));

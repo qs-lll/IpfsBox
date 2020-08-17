@@ -1,11 +1,10 @@
 package droidninja.filepicker.adapters;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import droidninja.filepicker.PickerManager;
 import droidninja.filepicker.models.BaseFile;
 
 public abstract class SelectableAdapter<VH extends RecyclerView.ViewHolder, T extends BaseFile>

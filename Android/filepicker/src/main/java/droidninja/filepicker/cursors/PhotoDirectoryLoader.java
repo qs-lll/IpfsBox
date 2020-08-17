@@ -5,11 +5,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images.Media;
-import android.support.v4.content.CursorLoader;
+import androidx.loader.content.CursorLoader;
 
 import droidninja.filepicker.FilePickerConst;
-
-import static android.provider.MediaStore.MediaColumns.MIME_TYPE;
 
 public class PhotoDirectoryLoader extends CursorLoader {
 

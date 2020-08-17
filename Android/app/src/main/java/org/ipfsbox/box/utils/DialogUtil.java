@@ -2,8 +2,8 @@ package org.ipfsbox.box.utils;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.annotation.IdRes;
-import android.support.annotation.LayoutRes;
+import androidx.annotation.IdRes;
+import androidx.annotation.LayoutRes;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
