@@ -6,4 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".activity.ListActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

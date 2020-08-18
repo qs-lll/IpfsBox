@@ -28,7 +28,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-        buildToolsVersion '27.0.3'
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
@@ -38,6 +38,7 @@ dependencies {
     //knife
     implementation 'com.jakewharton:butterknife:10.2.3'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha05'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
@@ -46,4 +47,5 @@ dependencies {
     implementation 'com.umeng.sdk:common:latest.integration'
     implementation 'com.umeng.sdk:analytics:latest.integration'
     implementation project(':library')
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
 }
